@@ -1,0 +1,22 @@
+parameters: {}
+environment: {}
+packages:
+    - name: cloudflare-dyndns
+#      shared: false
+#      environment: {}
+#      parameters: {}
+#      annotations: {}
+      functions:
+        - name: setIp
+#          binary: false
+#          main: ""
+          runtime: python:default
+#          web: true
+#          websecure: false
+#          parameters: {}
+#          environment: {}
+#          annotations: {}
+          limits:
+            timeout: 5000
+            memory: 256
+            logs: 0
